@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>conditional statements</h2>
+    <script>
+        //income tax
+        var income=500000
+         tax=0
+         if(income<=250000){
+            console.log("their is no tax")
+         }
+         else if(income>250000 && income<=500000){
+            tax=(income-250000)*0.05;
+            console.log(` total tax is ${tax}`)
+         }
+         else if(income<500000 && income>=1000000){
+            tax=12500+(income-500000)*0.02;
+            console.log(` total tax is ${tax}`)
+         }else{
+            tax=1,12,500+(income-1000000)*0.03;
+            console.log(` total tax is ${tax}`)
+         }
+
+
+        //cost based on weight
+        let weight=prompt("enter the weight in kgs:")
+        if(weight<1){
+            let local=15
+            let national=8
+            let international=15
+            let cost1=local+national+international
+            console.log(cost1)
+        }
+        else if(weight>1 && weight<=5){
+            let local=10
+            let national=15
+            let international=30
+            let cost2=local+national+international
+            console.log(cost2)
+        }
+        else if(weight>5 && weight<=10){
+            let local=20
+            let national=35
+            let international=70
+            let cost3=local+national+international
+            console.log(cost3)
+        }
+        else{
+            console.log("not specified")
+        }
+
+        //electricity bill
+        let units=prompt("enter the number of units:")
+        if(units<=100){
+            amount1=units*1
+            console.log(amount1)
+        }
+        else if(units>100 && units<=300){
+            amount2=100*1+(units-100)*1.5
+            console.log(amount2)
+        }
+        else{
+            amount3=100*1+200*1.5+(units-300)*2
+            console.log(amount3)
+        }
+    </script>
+    
+</body>
+</html>
